@@ -8,41 +8,41 @@ import { UpperCasePipe } from './shared/pipes/UpperCasePipe.pipe';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderLayoutComponent, FormsModule, UpperCasePipe, CurrencyPipe],
+  imports: [RouterOutlet, HeaderLayoutComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular-basic-project');
+  // protected readonly title = signal('angular-basic-project');
 
-  // EVENT LESSON
+  // // EVENT LESSON
 
-  nameBtnShow = 'Click me to show message!';
-  nameBtnHide = 'Click me to hide message!';
+  // nameBtnShow = 'Click me to show message!';
+  // nameBtnHide = 'Click me to hide message!';
 
-  clickMessage = '';
+  // clickMessage = '';
 
-  handleClickMeShow(): void {
-    this.clickMessage = 'Clicked Me ==> Hello World';
-  }
+  // handleClickMeShow(): void {
+  //   this.clickMessage = 'Clicked Me ==> Hello World';
+  // }
 
-    handleClickMeHide(): void {
-    this.clickMessage = '';
-  }
+  //   handleClickMeHide(): void {
+  //   this.clickMessage = '';
+  // }
 
-  updateField(): void {
-    console.log('Hello World!');
-  }
+  // updateField(): void {
+  //   console.log('Hello World!');
+  // }
 
-  // TWO WAY BINDING LESSON
-  bindingMessage = '';
+  // // TWO WAY BINDING LESSON
+  // bindingMessage = '';
 
-  // NG FOR (RENDER DATA)
-    products = [
-    { name: 'samba og', price: 400000, image: 'assets/images/samba-og.jpg' },
-    { name: 'nike f1', price: 500000, image: 'assets/images/samba-og.jpg' },
-    { name: 'addidas f2', price: 600000, image: 'assets/images/samba-og.jpg' },
-    { name: 'mlb f3', price: 700000, image: 'assets/images/samba-og.jpg' },
-  ];
+  // // NG FOR (RENDER DATA)
+  //   products = [
+  //   { name: 'samba og', price: 400000, image: 'assets/images/samba-og.jpg' },
+  //   { name: 'nike f1', price: 500000, image: 'assets/images/samba-og.jpg' },
+  //   { name: 'addidas f2', price: 600000, image: 'assets/images/samba-og.jpg' },
+  //   { name: 'mlb f3', price: 700000, image: 'assets/images/samba-og.jpg' },
+  // ];
 
 }
